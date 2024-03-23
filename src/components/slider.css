@@ -1,0 +1,27 @@
+.carousel{
+    padding: 30px;
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 100%;
+    
+    
+
+}
+.carousalImages{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    color:black
+
+    
+}
+.carousalDiv{
+    /* border: 2px solid purple; */
+    height:300px;
+    width:auto;
+    color:black
+}
+.dots{
+    color: black;
+}
