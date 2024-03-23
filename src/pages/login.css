@@ -7,7 +7,7 @@
   /* border: 2px solid blue; */
 }
 .rightSide {
-  /* border: 2px solid green; */
+ 
   background-color: #ffede1;
   padding: 40px;
   display: flex;
@@ -16,7 +16,7 @@
   align-items: center;
 }
 .loginBox {
-  /* border: 2px solid #d8702a; */
+
   width: 400px;
   height: 300px;
   padding: 20px;
