@@ -4,7 +4,7 @@ import { auth } from "../config/FirebaseConfig";
 import { Button, Form, Input } from "antd";
 import { Col, Row } from "antd";
 import { Link, useNavigate } from "react-router-dom";
-import './register.css'
+import "./register.css";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const Register = () => {
         // Signed in
         const user = userCredential.user;
         console.log(user);
-        navigate("/login")
+        navigate("/login");
 
         // ...
       })
@@ -31,10 +31,12 @@ const Register = () => {
       });
   };
   return (
-    <div >
-      <Row className="register" >
+    <div>
+      <Row className="register">
         <Col className="registerForm">
-          <h3 style={{color:"#f47458" ,fontSize:"25px"}}>Registration...</h3>
+          <h3 style={{ color: "#f47458", fontSize: "25px" }}>
+            Registration...
+          </h3>
           <Form
             name="basic"
             labelCol={{
@@ -60,7 +62,9 @@ const Register = () => {
                 },
               ]}
             >
-              <Input />
+              <Input
+               
+              />
             </Form.Item>
             <Form.Item
               label="Address"
@@ -68,11 +72,12 @@ const Register = () => {
               rules={[
                 {
                   required: true,
-                 
                 },
               ]}
             >
-              <Input />
+              <Input
+              
+              />
             </Form.Item>
             <Form.Item
               label="Phone Number"
@@ -80,15 +85,15 @@ const Register = () => {
               rules={[
                 {
                   required: true,
-                 
                 },
               ]}
             >
               <Input />
-            </Form.Item>
              
+            </Form.Item>
+
             <Form.Item
-              name={["user", "email"]}
+              name="email"
               label="Email"
               rules={[
                 {
@@ -100,6 +105,7 @@ const Register = () => {
               <Input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+            
                 required
               />
             </Form.Item>
@@ -116,6 +122,7 @@ const Register = () => {
               <Input.Password
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+            
                 required
               />
             </Form.Item>

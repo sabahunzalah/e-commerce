@@ -5,6 +5,7 @@ import { Button, Form, Input } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import { Col, Row } from "antd";
 import "./login.css";
+import { useFormik } from 'formik';
 import IMAGE1 from "../assets/images/68747470733a2f2f64626161736c74642e636f2e696e2f696d672f65636f6d6d657263652e676966.gif";
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -13,6 +14,14 @@ const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
 };
 const Login = () => {
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+    },
+    onSubmit: values => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -41,7 +50,7 @@ const Login = () => {
         <Row>
           <h1 style={{ color: " #f47458", textAlign: "center" }}>LogIn</h1>
           <Col lg={24} className="loginBox">
-            <Form
+            <Form onSubmit={formik.handleSubmit}
               name="basic"
               labelCol={{
                 span: 8,
@@ -59,7 +68,7 @@ const Login = () => {
               onFinishFailed={onFinishFailed}
               autoComplete="off"
             >
-              <Form.Item
+              <Form.Item 
                 label="Username"
                 name="username"
                 rules={[
@@ -82,7 +91,13 @@ const Login = () => {
                   },
                 ]}
               >
-                <Input required onChange={(e) => setEmail(e.target.value)} />
+                <Input required 
+                 onChange={(e) => setEmail(e.target.value)}
+                         id="email"
+                         name="email"
+                         type="email"
+                         value={email} />
+                       
               </Form.Item>
               <Form.Item
                 label="Password"
@@ -97,15 +112,26 @@ const Login = () => {
                 <Input.Password
                   required
                   onChange={(e) => setPassword(e.target.value)}
+                  value={password}
                 />
               </Form.Item>
               <h3 style={{ textAlign: "center" }}>
                 I dont have an account?
+                <Link to={"/formik"} style={{ color: "#f47458" }}>
+                  {" "}
+                  <span> Register with Formik </span>
+                </Link>
+              
+              </h3>
+              <h3 style={{ textAlign: "center" }}>
+                Or
                 <Link to={"/Register"} style={{ color: "#f47458" }}>
                   {" "}
-                  <span> Register Now</span>
+                  <span> Register with Firebase</span>
                 </Link>
+              
               </h3>
+              
               <div className="btnParent">
                 <Button type="primary" className="submitbutton"   onClick={onLogin}>
                   LogIn

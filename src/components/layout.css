@@ -8,16 +8,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* border:2px solid black; */
-  background-color: #f47458;
-}
+  background-color:  #ecdb5f;}
 .main {
-  /* border: 2px solid black; */
+
 
   height: 100vh;
 }
 .headerlogo {
-  /* border: 2px solid red; */
+ 
   display: flex;
   flex-direction: row;
   justify-content: center;
