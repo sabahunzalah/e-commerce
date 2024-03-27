@@ -8,7 +8,7 @@
 }
 .rightSide {
  
-  background-color: #ffede1;
+  background-color:  #ecdb5f;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -16,13 +16,13 @@
   align-items: center;
 }
 .loginBox {
-
+  /* border: 2px solid black; */
   width: 400px;
-  height: 300px;
+  height: 400px;
   padding: 20px;
 }
 .submitbutton {
-  background-color: #f47458;
+  background-color:  #a99605;
 }
 .btnParent{
     display: flex;

@@ -1,16 +1,14 @@
 import React from "react";
 import { Layout, theme, Input } from "antd";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import "./layout.css";
-import NAVIMAGE from "../assets/images/oqG6VEkEjf.gif";
 import { TiShoppingCart } from "react-icons/ti";
 const { Header, Content, Footer } = Layout;
 const AppLayout = ({ children }) => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
-  const navigate = useNavigate();
+
   return (
     <Layout>
       <Header className="header">

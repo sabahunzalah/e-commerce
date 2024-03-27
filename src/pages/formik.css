@@ -1,0 +1,52 @@
+.formikRow{
+    /* border: 2px solid black; */
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
+}
+.formikCol{
+    /* border :2px solid blue; */
+   
+ 
+    
+}
+.formikForm{
+    /* border: 2px solid orange; */
+    /* height: auto; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border-radius: 10px;
+   
+  
+   
+}
+.inputFeild{
+    /* border:2px solid orange; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 10px;
+    color: black;
+}
+input{
+    width:400px;
+    padding: 10px;
+    border-radius: 10px;
+     border-color: transparent;
+    
+}
+.submitBtn{
+    background-color:  #a99605;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 200;
+}

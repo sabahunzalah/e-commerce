@@ -5,6 +5,7 @@ import Login from '../pages/Login';
 import Register from '../pages/Register';
 import Home from '../pages/Home';
 import AppLayout from '../components/Layout';
+import SignupFormik from '../pages/formik';
 
 function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ function AppRoutes() {
 <Routes>
   <Route  exact path='/Login' element= {<Login />} />
   <Route  exact path='/Register' element={<AppLayout> <Register /></AppLayout>} />
+  <Route  exact path='/formik' element={<AppLayout> <SignupFormik /></AppLayout>} />
   <Route  exact path='/' element={ <AppLayout> <Home /></AppLayout>} />
 </Routes>
 </BrowserRouter>
