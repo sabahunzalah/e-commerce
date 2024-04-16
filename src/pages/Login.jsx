@@ -49,7 +49,7 @@ const Login = () => {
       <Col className="rightSide" lg={10}>
         <Row>
           <h1 style={{ color: " #f47458", textAlign: "center" }}>LogIn</h1>
-          <Col lg={24}  md={12} className="loginBox">
+          <Col lg={24} className="loginBox">
             <Form onSubmit={formik.handleSubmit}
               name="basic"
               labelCol={{

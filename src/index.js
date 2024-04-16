@@ -3,19 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SignupFormik from './pages/formik';
-import Register from './pages/Register';
+import ProductProvider from './components/Product';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <ProductProvider>
   <React.StrictMode>
     <App />
-   
-    {/* <Register /> */}
-    
   </React.StrictMode>
+  </ProductProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

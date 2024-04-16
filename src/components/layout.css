@@ -5,15 +5,14 @@
   width: 100%;
   /* height: 80px; */
   display: flex;
+  /* padding: 10px; */
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color:  #ecdb5f;}
-.main {
-
-
+/* .main {
   height: 100vh;
-}
+} */
 .headerlogo {
  
   display: flex;
@@ -21,7 +20,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 0%;
-  color: white;
+  /* color: white; */
+  color: rgb(51, 45, 45);
 }
 .headerLinks {
   /* border :2px solid blue; */
@@ -33,5 +33,5 @@
   align-items: center;
   font-size: 17px;
   font-weight: 600;
-  width: 500px;
+  /* width: 500px; */
 }
