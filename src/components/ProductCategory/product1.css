@@ -1,0 +1,40 @@
+.CardLayout{
+  border: 1px solid rgb(241, 237, 237);
+  /* position: "absolute"; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overscroll-behavior-x: hide;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+.container1{
+  /* border: 2px solid black; */
+  justify-content: center;
+  align-items: center;
+  display: 'flex';
+  gap: 10px;
+
+}
+.card-list1{
+  display: flex;
+  gap: 10px;
+}
+ .badge{
+ 
+  color: white;
+  font-weight: 400;
+  position: absolute;
+  font-size: 15px;
+  padding: 5px ,25px;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 5px;
+  display: inline-block;
+  background-color: red !important;
+}
