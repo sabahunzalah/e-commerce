@@ -3,56 +3,56 @@ import RecommendedProductImages from "../../assets/Items/Image1";
 const RecommendedProducts = [
     {
       id: 1,
-      title: "Item 1",
-      description: "This is the first item",
+      title: "IPhone 14",
+      description: " Iphone14 pro max",
       image: RecommendedProductImages.IPhone14,
     },
     {
       id: 2,
-      title: "Item 2",
-      description: "This is the second item",
+      title: "SonyPlayStation",
+      description: "This is sony playstation",
       image: RecommendedProductImages. SonyPlayStation,
       
     },
     {
         id: 3,
-        title: "Item 4",
-        description: "This is the fourth item",
+        title: "SmartWatch",
+        description: "This is SmartWatch",
         image: RecommendedProductImages.SmartWatch,
      
       },
     {
       id: 4,
-      title: "Item 4",
-      description: "This is the fourth item",
+      title: "KiKoMilanoLipGlows",
+      description: " KiKoMilanoLipGlows",
       image: RecommendedProductImages.KiKoMilanoLipGlows,
    
     },
     {
       id: 5,
-      title: "Item 5",
-      description: "This is the fifth item",
+      title: "AppleIphone11",
+      description: "This is AppleIphone11",
       image: RecommendedProductImages.AppleIphone11,
      
     },
     {
       id: 6,
-      title: "Item 6",
-      description: "This is the sixth item",
+      title: "SonyPlayStation5",
+      description: " sony PlayStation5",
       image: RecommendedProductImages.SonyPlayStation5,
      
     },
     {
       id: 7,
-      title: "Item 7",
-      description: "This is the seventh item",
+      title: "AppleAirPods",
+      description: " AppleAirPods",
       image: RecommendedProductImages.AppleAirPods,
       
     },
     {
       id: 8,
-      title: "Item 8",
-      description: "This is the eighth item",
+      title: "Ipad",
+      description: "This is Ipad",
       image: RecommendedProductImages.Ipad,
       
     },

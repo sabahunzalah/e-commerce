@@ -11,7 +11,7 @@ const AppLayout = ({ children }) => {
   } = theme.useToken();
 
   return (
-    <Layout style={{backgroundColor:'#dff1da;', border:'1px solid red'}}>
+    <Layout style={{backgroundColor:'#dff1da;'}}>
       <Header className="header">
         <Link style={{ color: "white" }} to={"/"}>
           <div className="headerlogo">

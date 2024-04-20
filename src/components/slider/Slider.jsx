@@ -1,10 +1,10 @@
 import React from "react";
 import { Carousel } from "antd";
 import "./slider.css";
-import IMAGE1 from "../assets/Items/slide1.avif";
-import IMAGE2 from "../assets/Items/slide2.avif";
-import IMAGE3 from "../assets/Items/slide3.avif";
-import IMAGE4 from "../assets/Items/slide4.avif";
+import IMAGE1 from "../../assets/Items/slide1.avif"
+import IMAGE2 from "../../assets/Items/slide2.avif";
+import IMAGE3 from "../../assets/Items/slide3.avif";
+import IMAGE4 from "../../assets/Items/slide4.avif";
 import { ColorFormat } from "antd/es/color-picker/interface";
 
 const Slider = () => {

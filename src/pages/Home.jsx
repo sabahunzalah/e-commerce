@@ -1,16 +1,17 @@
 import React,{useContext} from "react";
-import Slider from "../components/Slider";
+import Slider from "../components/slider/Slider";
 import ScrumItem from "../components/showItems";
-import ScrumItem2 from "../components/ProductCategory/ProductsCategories";
+import RecommendedItem from "../components/ProductCategory/ProductsCategories";
 import ItemImages from "../assets/Items";
-import {ProductContext } from "../components/Product";
+import {ProductContext} from "../components/productsfromApis/Product";
+import ProductList from "../components/productsfromApis/ProductList";
 
 const Home = () => {
 
   const {Products} = useContext(ProductContext)
   console.log(Products)
   return (
-    <div style={{ border: 1, borderColor: "black" }}>
+    <div>
       <Slider />
       <div style={{ backgroundColor: "white", height: 85, width: "100%",}}>
         <img
@@ -19,9 +20,9 @@ const Home = () => {
         />
       </div>
       <ScrumItem />
-      <ScrumItem2 />
-      {/* <div>{Products.map(Products => {return<div key={Products.id}>{Products.title}</div>}
-      )}</div> */}
+      <RecommendedItem />
+      <ProductList />
+
       
     </div>
   );

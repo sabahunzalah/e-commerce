@@ -38,12 +38,6 @@ const Items = [
     image: ItemImages.Image7,
   },
   {
-    id: 8,
-    title: "Item 8",
-    description: "This is the eighth item",
-    image: ItemImages.Image8,
-  },
-  {
     id: 9,
     title: "Item 9",
     description: "This is the ninth item",
@@ -55,12 +49,7 @@ const Items = [
     description: "This is the tenth item",
     image: ItemImages.Image10,
   },
-  {
-    id: 11,
-    title: "Item 11",
-    description: "This is the eleventh item",
-    image: ItemImages.Image11,
-  },
+
   {
     id: 12,
     title: "Item 12",
@@ -139,12 +128,7 @@ const Items = [
     description: "This is the twenty-fourth item",
     image: ItemImages.Image24,
   },
-  {
-    id: 25,
-    title: "Item 25",
-    description: "This is the twenty-fifth item",
-    image: ItemImages.Image25,
-  },
+ 
   {
     id: 26,
     title: "Item 26",
