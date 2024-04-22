@@ -11,10 +11,12 @@ const productPic = {
   const[Products,setproducts] = useState([])
   //fetch products
   useEffect(()=>{
+    console.log("im in useefect")
     const fetchProducts = async ()=>{
       const response = await fetch('https://fakestoreapi.com/products');
       const data = await response.json();
       setproducts(data)
+      console.log(data)
     }
     fetchProducts()
   },[])
