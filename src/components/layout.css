@@ -9,12 +9,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color:  #ecdb5f;}
+  background-color: #ecdb5f;
+}
 /* .main {
   height: 100vh;
 } */
 .headerlogo {
- 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,4 +34,22 @@
   font-size: 17px;
   font-weight: 600;
   /* width: 500px; */
+}
+.itemAmountmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  width: 20px;
+  height: 22px;
+  position:absolute;
+  right:34px;
+  top:30px;
+  border-radius: 50px;
+  text-align: center;
+  padding-bottom: 2px;
+  
+
+ 
 }

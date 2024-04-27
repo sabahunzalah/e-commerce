@@ -10,7 +10,7 @@ const ProductList = () => {
   const MensProducts = Products.filter((item) => {
     return item.category === "men's clothing";
   });
-  console.log(MensProducts);
+  // console.log(MensProducts);
   const Jewelery = Products.filter((item) => {
     return item.category === "jewelery";
   });
@@ -23,7 +23,7 @@ const ProductList = () => {
   return (
     
       <Row>
-        <h2 className="Deals">Hot Deals</h2>
+        <h2 className="Deals" >Hot Deals</h2>
         <Col className="productsStyling" lg={24}>
           <img src={IMAGE1} alt="" height={300}  width={400}/>
           {MensProducts.map((items) => {
@@ -35,7 +35,7 @@ const ProductList = () => {
           })}
         </Col>
 
-        <h2 className="Deals">Hot Deals In women Clothings</h2>
+        <h2 className="Deals" key={Products.id} >Hot Deals In women Clothings</h2>
         <Col className="productsStyling" lg={24}>
 
           {WomensClothes.map((items) => {
@@ -46,7 +46,7 @@ const ProductList = () => {
         </Col>
         
         
-        <h2 className="Deals">Hot Deals in Jewellery</h2>
+        <h2 className="Deals" key={Products.id} >Hot Deals in Jewellery</h2>
         <Col className="productsStyling" lg={24}>
         
           {Jewelery.map((items) => {
@@ -55,7 +55,7 @@ const ProductList = () => {
             );
           })}
         </Col>
-        <h2 className="Deals">Hot Deals In Electronics</h2>
+        <h2 className="Deals" key={Products.id} >Hot Deals In Electronics</h2>
         <Col className="productsStyling" lg={24}>
       
           {Electronics.map((items) => {

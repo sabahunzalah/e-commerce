@@ -6,6 +6,9 @@ import Register from "../pages/Register";
 import Home from "../pages/Home";
 import AppLayout from "../components/Layout";
 import SignupFormik from "../pages/formik";
+import ProductDetail from "../pages/ProductDetail";
+import AddToCart from "../pages/AddCartPage";
+
 
 function AppRoutes() {
   return (
@@ -35,6 +38,17 @@ function AppRoutes() {
           />
           <Route
             exact
+            path="/AddCartPage"
+            element={
+              <AppLayout>
+                {" "}
+                <AddToCart />
+              </AppLayout>
+            }
+          />
+
+          <Route
+            exact
             path="/"
             element={
               <AppLayout>
@@ -43,6 +57,7 @@ function AppRoutes() {
               </AppLayout>
             }
           />
+          <Route exact path = "/ProductDetail" element={<ProductDetail/>} />
         </Routes>
       </BrowserRouter>
     </div>
