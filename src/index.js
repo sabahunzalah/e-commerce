@@ -9,6 +9,7 @@ import CartProvider from './components/CartItem/CartItemContext';
 
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <CartProvider>
@@ -18,7 +19,8 @@ root.render(
   </React.StrictMode>
   </ProductProvider>
   </CartProvider>
-  
+  // <Hamburger/>
+ 
 
 
 );

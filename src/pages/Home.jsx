@@ -6,13 +6,15 @@ import ItemImages from "../assets/Items";
 import { ProductContext } from "../components/productsfromApis/Product";
 import ProductList from "../components/productsfromApis/ProductList";
 
+
 const Home = () => {
   return (
     <div>
+     
       <Slider />
       <ScrumItem />
-      <RecommendedItem />
       <ProductList />
+      <RecommendedItem />
     </div>
   );
 };

@@ -18,11 +18,8 @@ const SignupFormik = () => {
       .min(2, "Too Short!")
       // .max(13, "Too Long!")
       .required("Required"),
-    email: Yup.string()
-    .email("Invalid email")
-    .required("Required"),
-    password : Yup.string()
-    .required('Required'),
+    email: Yup.string().email("Invalid email").required("Required"),
+    password: Yup.string().required("Required"),
   });
   const formik = useFormik({
     //first step to explain initial value  should be empty
@@ -42,34 +39,35 @@ const SignupFormik = () => {
   });
   return (
     <Row className="formikRow">
-      <Col className="formikCol " lg={12}>
-        <h3 style={{ color: "#f47458", fontSize: "25px" }}>Registration...</h3>
+      <Col className="formikCol " lg={24} md={18} sm={23} xs={24}>
+        <h3 style={{ color: "#f47458", fontSize: "35px" ,margin:0, }}>Registration...</h3>
         <form onSubmit={formik.handleSubmit} className="formikForm">
-          <Row>
-            <Col lg={24} className="inputFeild">
+          <Row className="inputFeild">
+            <Col lg={12} md={24} sm={24} xs={24}>
               <label htmlFor="username">User Name :</label>
-
-               
-              {formik.touched.username  && formik.errors.username ? 
-              <div  style={{color:"red"}}> {formik.errors.username}</div>:null
-            }
+            </Col>
+            <Col lg={12} md={24} sm={24} xs={24}>
+              {formik.touched.username && formik.errors.username ? (
+                <div style={{ color: "red" }}> {formik.errors.username}</div>
+              ) : null}
               <input
-         
                 id="username"
                 name="username"
                 onChange={formik.handleChange}
                 type="text"
                 value={formik.values.username}
-                />
-            
+              />
             </Col>
-            <Col lg={24} className="inputFeild">
+          </Row>
+          <Row className="inputFeild">
+            <Col lg={24} md={24} sm={24} xs={24}>
               <label htmlFor="address"> User Address :</label>
-              {formik.touched.address  && formik.errors.address ? 
-              <div  style={{color:"red"}}> {formik.errors.address}</div>:null
-            }
+            </Col>
+            <Col lg={24} md={24} sm={24} xs={24}>
+              {formik.touched.address && formik.errors.address ? (
+                <div style={{ color: "red" }}> {formik.errors.address}</div>
+              ) : null}
               <input
-      
                 id="address"
                 name="address"
                 type="text"
@@ -77,9 +75,13 @@ const SignupFormik = () => {
                 value={formik.values.address}
               />
             </Col>
+          </Row>
 
-            <Col lg={24} className="inputFeild">
+          <Row className="inputFeild">
+            <Col lg={24} md={24} sm={24} xs={24}>
               <label htmlFor="phonenumber">Phone Number :</label>
+              </Col>
+            <Col lg={24} md={24} sm={24} xs={24}>
               {formik.touched.phonenumber  && formik.errors.phonenumber ? 
               <div  style={{color:"red"}}> {formik.errors.phonenumber}</div>:null
             }
@@ -91,10 +93,13 @@ const SignupFormik = () => {
                 onChange={formik.handleChange}
                 value={formik.values.phonenumber}
               />
-            </Col>
-            <Col lg={24} className="inputFeild">
+              </Col>
+          </Row>
+          <Row className="inputFeild">
+            <Col lg={24} md={24} sm={24} xs={24}>
               <label htmlFor="email">Email Address :</label>
-
+              </Col>
+            <Col lg={24} md={24} sm={24} xs={24}>
               
               {formik.touched.email  && formik.errors.email ? 
               <div  style={{color:"red"}}> {formik.errors.email}</div>:null
@@ -105,9 +110,13 @@ const SignupFormik = () => {
                 onChange={formik.handleChange}
                 value={formik.values.email}
               />
-            </Col>
-            <Col lg={24} className="inputFeild">
-              <label htmlFor="email">Password :</label>
+             </Col>
+          </Row>
+          <Row className="inputFeild">
+            <Col lg={24} md={24} sm={24} xs={24}>
+              <label htmlFor="email"> Your Password :</label>
+              </Col>
+            <Col lg={24} md={24} sm={24} xs={24}>
               {formik.touched.password  && formik.errors.password ? 
               <div  style={{color:"red"}}> {formik.errors.password}</div>:null
             }
@@ -120,12 +129,13 @@ const SignupFormik = () => {
                 onChange={formik.handleChange}
                 value={formik.values.password}
               />
-            </Col>
+             </Col>
+           
           </Row>
-
           <button type="submit" className="submitBtn">
             Submit
           </button>
+         
         </form>
       </Col>
     </Row>

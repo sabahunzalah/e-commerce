@@ -1,20 +1,18 @@
 .carousel {
- /* padding-left: 15px;
- padding-right: 15px; */
-  /* border: 2px solid blue; */
+
   height: 100%;
   width: 100%;
-  /* margin: 5px; */
+ 
 }
 .carousalImages {
   /* border: 2px solid black; */
   height: 100%;
   width: 100%;
-  /* border-radius: 30px; */
+
   color: black;
 }
 .carousalDiv {
-  /* border: 2px solid purple; */
+
   height: 380px;
   width: auto;
   color: black;

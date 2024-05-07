@@ -17,27 +17,33 @@ const CartItem = ({ item }) => {
           <img className="ProductImg" src={image} alt="" />
         </Link>
         <div className="ProductDetailcart">
-          <Link to={`/ProductDetail/${id}`} style={{ color: "black" }}>
-            {title}
-            </Link>
+          
             <div className="PricingDiv">
               <div className="AddOrRemove">
                 <IoMdRemove onClick={()=>decreaseAmount(id)}/>
-                {amount}
+                <div >{amount}</div>
                 <IoMdAdd onClick={()=>increaseAmount(id)} />
               </div>
               <div className="finalPrice">
                 <div>$ {price}</div>
                 <div>{`$ ${parseFloat(price * amount).toFixed(2)}`}</div>
               </div>
-            </div>
-         
-          <IoMdCloseCircle
+              <IoMdCloseCircle
             className="closebtn"
             onClick={() => removeFromCart(id)}
           />
+            </div>
+           
+          
         </div>
+      
+       
       </div>
+      <div className="productname">
+        <Link to={`/ProductDetail/${id}`} style={{ color: "black" }}>
+            {title}
+            </Link>
+        </div>
     </div>
     
   );

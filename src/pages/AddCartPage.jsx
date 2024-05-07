@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-//import cartItemContext
+
 import "./Addtocart.css"
 
 import CartItem from '../components/CartItem/CartItem'
@@ -9,10 +9,10 @@ import { FiTrash2 } from "react-icons/fi";
 const AddToCart = () => {
   const {cart,clearCart,total}=( useContext(CartContext))
   return (
-    <div>{cart.map(item=>{
+    <div className='addToCartPage'>{cart.map(item=>{
       return <CartItem  item={item} key={item.id}/>
     })}
-      <div>
+      <div style={{border :"2px solid black"}}>
         <div className='TotalPricediv'>
           {/* total price */}
           <div>
