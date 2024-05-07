@@ -56,6 +56,35 @@ const RecommendedProducts = [
       image: RecommendedProductImages.Ipad,
       
     },
+    {
+      id: 1,
+      title: "IPhone 14",
+      description: " Iphone14 pro max",
+      image: RecommendedProductImages.IPhone14,
+    },
+    {
+      id: 2,
+      title: "SonyPlayStation",
+      description: "This is sony playstation",
+      image: RecommendedProductImages. SonyPlayStation,
+      
+    },
+    {
+        id: 3,
+        title: "SmartWatch",
+        description: "This is SmartWatch",
+        image: RecommendedProductImages.SmartWatch,
+     
+      },
+
+    {
+      id: 5,
+      title: "AppleIphone11",
+      description: "This is AppleIphone11",
+      image: RecommendedProductImages.AppleIphone11,
+     
+    },
+
     
   ];
   export default RecommendedProducts;

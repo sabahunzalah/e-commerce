@@ -1,8 +1,8 @@
 .buttonStyling {
   height: 30px;
   width: 100px;
-  background-color: rgb(150, 147, 147);
-  color: white;
+  background-color: rgb(255, 187, 0);
+  color: black;
   border-radius: 15px;
   text-align: center;
   display: flex;

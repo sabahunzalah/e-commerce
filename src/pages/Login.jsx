@@ -43,10 +43,10 @@ const Login = () => {
   };
   return (
     <Row className="container-main">
-      <Col className="leftSide" lg={14}>
+      <Col className="leftSide" lg={14} md={11} sm={{span:0}} xs={{span:0}}>
         <img src={IMAGE1} style={{ width: "100%", height: "100%" }}></img>
       </Col>
-      <Col className="rightSide" lg={10}>
+      <Col className="rightSide" lg={10} md={13} sm={24} xs={24}>
         <Row>
           <h1 style={{ color: " #f47458", textAlign: "center" }}>LogIn</h1>
           <Col lg={24} className="loginBox">
@@ -119,18 +119,17 @@ const Login = () => {
                 I dont have an account?
                 <Link to={"/formik"} style={{ color: "#f47458" }}>
                   {" "}
-                  <span> Register with Formik </span>
+                  <span> Register Now</span>
                 </Link>
-              
               </h3>
-              <h3 style={{ textAlign: "center" }}>
+              {/* <h3 style={{ textAlign: "center" }}>
                 Or
                 <Link to={"/Register"} style={{ color: "#f47458" }}>
                   {" "}
                   <span> Register with Firebase</span>
                 </Link>
               
-              </h3>
+              </h3> */}
               
               <div className="btnParent">
                 <Button type="primary" className="submitbutton"   onClick={onLogin}>
